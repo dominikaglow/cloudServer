@@ -22,12 +22,12 @@ app.get('/products', (req, res) => {
     res.json(products);
 });
 
-app.post('/payments', (req, res) => {
-    const data = req.body;
-    console.log("Received payment data: ");
-    console.log(data);
-    res.status(200).send("Payment received");
-});
+// app.post('/payments', (req, res) => {
+//     const data = req.body;
+//     console.log("Received payment data: ");
+//     console.log(data);
+//     res.status(200).send("Payment received");
+// });
 
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
